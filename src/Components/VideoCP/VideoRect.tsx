@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react';
+import React from 'react';
 import videos from '../../Data/HotlistVid/HotlistVid';
 import { useParams } from 'react-router-dom';
 import '../../index.css'

@@ -1,5 +1,4 @@
 import React from 'react'
-import more from '../../assets/more.svg'
 import More from '../More/More';
 
 type dashReel = {

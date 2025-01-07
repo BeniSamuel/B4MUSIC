@@ -16,6 +16,9 @@ const Downloads: React.FC = () => {
         } dashcontent`}
       >
         {downloads ? "hy" : <Nodownload />}
+        <div onClick={() => { setDownloads(true)}}>
+          download
+        </div>
       </div>
     </div>
   );

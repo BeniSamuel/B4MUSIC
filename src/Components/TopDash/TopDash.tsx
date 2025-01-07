@@ -19,6 +19,10 @@ const TopDash: React.FC<topProp> = ({ setDash, dash }) => {
     setHistory(history ? false : true);
   }
 
+  function handleLoginState () {
+    setIsLoggedIn(true);
+  }
+
   return (
     <div className=" flex flex-col gap-2">
       <div
@@ -36,7 +40,7 @@ const TopDash: React.FC<topProp> = ({ setDash, dash }) => {
               setDash(dash ? false : true);
             }}
           />
-          <span className=" text-[#FB7800] font-bold text-lg font-poppins">
+          <span className=" text-[#FB7800] font-bold text-lg font-poppins" onClick={handleLoginState}>
             B4MUSIC
           </span>
         </div>

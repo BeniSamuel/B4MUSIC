@@ -3,7 +3,6 @@ import VIdeoCP from "../../Components/VideoCP/VIdeoCP";
 import VideoRect from "../../Components/VideoCP/VideoRect";
 import MorePeople from "../../Components/VideoCP/MorePeople";
 import Similar from "../../Components/VideoCP/Similar";
-import TopDash from "../../Components/TopDash/TopDash";
 
 const Video: React.FC = () => {
   return (

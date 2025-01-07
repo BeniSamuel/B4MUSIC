@@ -3,7 +3,6 @@ import like from "../../assets/like.svg";
 import dislike from "../../assets/dislike.svg";
 import comment from "../../assets/comment.svg";
 import share from "../../assets/share.svg";
-import more from "../../assets/more.svg";
 import More from "../More/More";
 
 const Reels: React.FC = () => {

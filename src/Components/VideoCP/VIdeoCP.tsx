@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import search from '../../assets/search.png'
 
-const VIdeoCP = () => {
+const VIdeoCP: React.FC = () => {
   const navigate = useNavigate();
   return (
     <div className='  flex flex-row justify-between items-center h-20 px-7'>

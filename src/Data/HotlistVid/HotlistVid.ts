@@ -1,7 +1,5 @@
-import golo from '../../assets/Video/PASSY KIZITO - GOLO.mp4'
-import bana from '../../assets/Video/y2mate.com - BANA  Shaffy Feat Chriss Eazy Visualizer_1440p.mp4'
+
 import yawa from '../../assets/Video/y2mate.com - Fireboy DML  YAWA Official Video_1440p.mp4'
-import baho from '../../assets/Video/y2mate.com - Israel Mbonyi  Baho_1080p.mp4'
 import afroPopCover from '../../assets/Image/omay-lay.png'
 import gospelCover from '../../assets/Image/israel-mbonyi.png'
 import drillCover from '../../assets/Image/central-cee-one.png'
