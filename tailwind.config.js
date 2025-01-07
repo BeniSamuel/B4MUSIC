@@ -1,5 +1,5 @@
 // tailwind.config.js
-module.exports = {
+export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
@@ -7,7 +7,7 @@ module.exports = {
         'custom-gradient': 'linear-gradient(180deg, #333333 0%, #D27927 100%)',
       },
       fontFamily: {
-        poppins: [ 'Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
       },
       animation: {
         bounce: "bounce 1s infinite",
@@ -22,8 +22,8 @@ module.exports = {
           '0%, 100%': { opacity: 0.5, transform: 'scale(0.95)' },
           '50%': { opacity: 1, transform: 'scale(1.05)' },
         },
-      }
+      },
     },
   },
   plugins: [],
-}
+};
