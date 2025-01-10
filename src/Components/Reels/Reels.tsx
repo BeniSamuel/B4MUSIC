@@ -5,9 +5,14 @@ import comment from "../../assets/comment.svg";
 import share from "../../assets/share.svg";
 import More from "../More/More";
 
-const Reels: React.FC = () => {
+
+type ReelsProps = {
+  image: string;
+}
+
+const Reels: React.FC<ReelsProps> = () => {
   return (
-    <div>
+    <div className=" pb-6">
       <div className=" flex flex-row gap-4">
         <div className=" h-[30rem] w-[26rem] rounded-3xl bg-black">
           <video controls className=" h-[30rem] w-[26rem] rounded-3xl">
