@@ -59,7 +59,7 @@ function LoginCP() {
             <p className=" text-[#7E7575] font-medium font-poppins text-sm">
               New to site.{" "}
               <Link to="/signup">
-                <span className=" text-[#FB7800] font-semibold">SignUp</span>
+                <span className=" text-[#FB7800] font-semibold">Sign up</span>
               </Link>
             </p>
           </div>

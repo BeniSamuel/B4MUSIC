@@ -42,7 +42,7 @@ function LoginCP() {
 
           <input
             type="submit"
-            value="Signin"
+            value="Sign in"
             className=" bg-[#FB7800] text-white w-96 h-12 rounded-lg font-poppins text-sm"
           />
           <div>
