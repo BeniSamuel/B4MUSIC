@@ -1,10 +1,10 @@
 import React from "react";
-import VIdeoCP from "../../components/Video/VIdeoCP";
-import VideoRect from "../../components/Video/VideoRect";
-import MorePeople from "../../components/Video/MorePeople";
-import Similar from "../../components/Video/Similar";
-import VidDescription from "../../components/Video/VidDescription";
-import VidComments from "../../components/Video/VidComments";
+import VIdeoCP from "../../Components/Video/VIdeoCP";
+import VideoRect from "../../Components/Video/VideoRect";
+import MorePeople from "../../Components/Video/MorePeople";
+import Similar from "../../Components/Video/Similar";
+import VidDescription from "../../Components/Video/VidDescription";
+import VidComments from "../../Components/Video/VidComments";
 
 const Video: React.FC = () => {
   return (

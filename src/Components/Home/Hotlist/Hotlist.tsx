@@ -1,7 +1,7 @@
 import React from "react";
 import hotlistIc from "../../../assets/Home/Hotlist/list-white.svg";
 import HotlistVid from "../HotlistVid/HotlistVid";
-import videos from "../../../data/HotlistVid/HotlistVid";
+import videos from "../../../Data/HotlistVid/HotlistVid";
 
 const Hotlist: React.FC = () => {
   return (

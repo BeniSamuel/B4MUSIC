@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import TopDash from "../../components/Dashboard/TopDash/TopDash";
-import Hotlist from "../../components/Home/Hotlist/Hotlist";
-import Trending from "../../components/Home/Trending/Trending";
-import DashReels from "../../components/Home/DashReel/DashReels";
-import DashboardMain from "../../layout/Dashboard/DashboardMain";
+import TopDash from "../../Components/Dashboard/TopDash/TopDash";
+import Hotlist from "../../Components/Home/Hotlist/Hotlist";
+import Trending from "../../Components/Home/Trending/Trending";
+import DashReels from "../../Components/Home/DashReel/DashReels";
+import DashboardMain from "../../Layout/Dashboard/DashboardMain";
 
 const Home: React.FC = () => {
   const [dash, setDash] = useState(true);

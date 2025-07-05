@@ -1,5 +1,5 @@
 import React from "react";
-import reels from "../../../data/Reels/Reels";
+import reels from "../../../Data/Reels/Reels";
 import reel from "../../../assets/Home/DashReel/camera_reels.svg";
 import DashReel from "./DashReel";
 

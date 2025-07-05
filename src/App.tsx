@@ -1,18 +1,18 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Protected from "./components/Protected/Protected";
-import LoadingCP from "./components/LoadingCP/LoadingCP";
+import Protected from "./Components/Protected/Protected";
+import LoadingCP from "./Components/LoadingCP/LoadingCP";
 
 // Lazy-loaded components
-const Login = lazy(() => import("./pages/Login/Login"));
-const Signup = lazy(() => import("./pages/Signup/Signup"));
-const Home = lazy(() => import("./pages/Home/Home"));
-const Reel = lazy(() => import("./pages/Reels/Reel"));
-const Playlist = lazy(() => import("./pages/Playlist/Playlist"));
-const Downloads = lazy(() => import("./pages/Downloads/Downloads"));
-const Profile = lazy(() => import("./pages/Profile/Profile"));
-const Settings = lazy(() => import("./pages/Settings/Settings"));
-const Video = lazy(() => import("./pages/Video/Video"));
+const Login = lazy(() => import("./Pages/Login/Login"));
+const Signup = lazy(() => import("./Pages/Signup/Signup"));
+const Home = lazy(() => import("./Pages/Home/Home"));
+const Reel = lazy(() => import("./Pages/Reels/Reel"));
+const Playlist = lazy(() => import("./Pages/Playlist/Playlist"));
+const Downloads = lazy(() => import("./Pages/Downloads/Downloads"));
+const Profile = lazy(() => import("./Pages/Profile/Profile"));
+const Settings = lazy(() => import("./Pages/Settings/Settings"));
+const Video = lazy(() => import("./Pages/Video/Video"));
 
 function App() {
   return (

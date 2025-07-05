@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { PlayContext } from "../../../pages/Playlist/Playlist";
+import { PlayContext } from "../../../Pages/Playlist/Playlist";
 
 // Define a type for form data
 type FormDataType = {

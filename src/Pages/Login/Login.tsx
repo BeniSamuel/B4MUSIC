@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "../../layout/Forms/Form";
+import Form from "../../Layout/Forms/Form";
 import { useNavigate, Link } from "react-router-dom";
-import Checkbox from "../../components/Common/Checkbox/Checkbox";
+import Checkbox from "../../Components/Common/Checkbox/Checkbox";
 
 const Login: React.FC = () => {
   const navigate = useNavigate();

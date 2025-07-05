@@ -1,5 +1,5 @@
 import React from 'react';
-import videos from '../../data/HotlistVid/HotlistVid';
+import videos from '../../Data/HotlistVid/HotlistVid';
 import { useParams } from 'react-router-dom';
 import '../../index.css'
 

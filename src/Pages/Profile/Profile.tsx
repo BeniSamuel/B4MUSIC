@@ -1,6 +1,6 @@
 import React from "react";
-import ProfileCP from "../../components/ProfileCP/ProfileCP";
-import DashboardMain from "../../layout/Dashboard/DashboardMain";
+import ProfileCP from "../../Components/ProfileCP/ProfileCP";
+import DashboardMain from "../../Layout/Dashboard/DashboardMain";
 
 const Profile: React.FC = () => {
   return (

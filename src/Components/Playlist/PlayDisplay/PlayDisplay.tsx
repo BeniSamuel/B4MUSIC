@@ -1,6 +1,6 @@
 // PlaylistDisplay.tsx
 import React, { useContext } from "react";
-import { PlayContext } from "../../../pages/Playlist/Playlist";
+import { PlayContext } from "../../../Pages/Playlist/Playlist";
 
 const PlaylistDisplay: React.FC = () => {
   const { playlists } = useContext(PlayContext);

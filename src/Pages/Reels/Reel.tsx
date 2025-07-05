@@ -1,9 +1,9 @@
 import React from "react";
 import reels from "../../assets/Reels/camera_reels.svg";
-import reelsData from "../../data/Reels/Reels";
-import Reels from "../../components/Reel/Reels/Reels";
+import reelsData from "../../Data/Reels/Reels";
+import Reels from "../../Components/Reel/Reels/Reels";
 import "../../index.css";
-import DashboardMain from "../../layout/Dashboard/DashboardMain";
+import DashboardMain from "../../Layout/Dashboard/DashboardMain";
 
 const Reel: React.FC = () => {
   return (

@@ -1,9 +1,9 @@
 // Playlist.tsx
 import React, { useState, createContext } from "react";
-import PlaylistCP from "../../components/Playlist/PlaylistCP/PlaylistCP";
-import PlaForm from "../../components/Playlist/PlaForm/PlaForm";
-import Playtop from "../../components/Playlist/PlayTop/Playtop";
-import DashboardMain from "../../layout/Dashboard/DashboardMain";
+import PlaylistCP from "../../Components/Playlist/PlaylistCP/PlaylistCP";
+import PlaForm from "../../Components/Playlist/PlaForm/PlaForm";
+import Playtop from "../../Components/Playlist/PlayTop/Playtop";
+import DashboardMain from "../../Layout/Dashboard/DashboardMain";
 
 // Define a type for the playlist context
 type PlaylistContextType = {
