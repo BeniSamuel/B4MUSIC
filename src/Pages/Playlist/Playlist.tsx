@@ -1,10 +1,9 @@
 // Playlist.tsx
 import React, { useState, createContext } from "react";
-import PlaylistCP from "../../Components/PlaylistCP/PlaylistCP";
-import PlaForm from "../../Components/PlaForm/PlaForm";
-import Playtop from "../../Components/PlayTop/Playtop";
-import "../../index.css";
-import DashLeft from "../../Components/DashLeft/DashLeft";
+import PlaylistCP from "../../components/Playlist/PlaylistCP/PlaylistCP";
+import PlaForm from "../../components/Playlist/PlaForm/PlaForm";
+import Playtop from "../../components/Playlist/PlayTop/Playtop";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 // Define a type for the playlist context
 type PlaylistContextType = {
@@ -38,16 +37,15 @@ const Playlist: React.FC = () => {
 
   return (
     <PlayContext.Provider value={{ playlists, setPlaylists }}>
-      <div className="flex flex-row h-[100vh] bg-[#0A0A0A] w-[100vw]">
-        <DashLeft />
-        <div className="h-full lg:w-[68rem] dashcontent overflow-hidden ">
+      <DashboardMain>
+        <div className="h-full overflow-hidden ">
           <Playtop />
           <div className=" overflow-y-auto">
             <PlaylistCP form={form} setForm={setForm} />
           </div>
         </div>
-        {form && <PlaForm />}
-      </div>
+        {form && <PlaForm setForm={setForm} />}
+      </DashboardMain>
     </PlayContext.Provider>
   );
 };

@@ -5,7 +5,7 @@ const ProfileCP: React.FC = () => {
     <div className="  h-[32rem] flex flex-col items-center gap-8">
       <div className=" h-32 w-24">
         <img />
-        <p className=" font-poppins text-sm">Beni Samuel</p>
+        <p className=" font-poppins text-sm text-white">Beni Samuel</p>
       </div>
       <div className=" flex flex-col gap-5 md:flex-row md:gap-48">
         <div>

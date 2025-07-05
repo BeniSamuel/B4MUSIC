@@ -1,27 +1,24 @@
-import image1 from "../../assets/Image/chriss-eazy.png";
-import image2 from "../../assets/Image/central-cee-two.png";
-import image3 from "../../assets/Image/burna-boy.png";
-import image4 from "../../assets/Image/tyla.png";
+import yawa from "../../assets/Videos/y2mate.com - Fireboy DML  YAWA Official Video_1440p.mp4";
 
 const trending = [
   {
     id: 1,
-    image: image1,
+    image: yawa,
     title: "Rwandan Trends",
   },
   {
     id: 2,
-    image: image2,
+    image: yawa,
     title: "England Trends",
   },
   {
     id: 3,
-    image: image3,
+    image: yawa,
     title: "Nigerian Trends",
   },
   {
     id: 4,
-    image: image4,
+    image: yawa,
     title: "South Africa Trends",
   },
 ];

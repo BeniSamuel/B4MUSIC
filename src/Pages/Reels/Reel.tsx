@@ -1,16 +1,14 @@
 import React from "react";
-import DashLeft from "../../Components/DashLeft/DashLeft";
-import reels from "../../assets/camera_reels.svg";
-import reelsData from "../../Data/Reels/Reels";
-import Reels from "../../Components/Reels/Reels";
+import reels from "../../assets/Reels/camera_reels.svg";
+import reelsData from "../../data/Reels/Reels";
+import Reels from "../../components/Reel/Reels/Reels";
 import "../../index.css";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 const Reel: React.FC = () => {
   return (
-    <div className="flex flex-row h-[100vh] bg-[#0A0A0A] w-[100vw]">
-      <DashLeft />
-
-      <div className="flex flex-col items-center justify-center md:w-[75vw] lg:w-[68rem] container dashcontent">
+    <DashboardMain>
+      <div className="flex flex-col items-center justify-center h-[95%]">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-4">
           <div className="flex flex-row gap-3 items-center justify-center">
@@ -21,7 +19,7 @@ const Reel: React.FC = () => {
 
         {/* Reels Section with Hidden Scrollbar */}
         <div
-          className="flex flex-col items-center gap-16 overflow-y-scroll h-[90%] w-full scrollbar-hide"
+          className="flex flex-col items-center gap-16 overflow-y-auto h-[90%] w-full scrollbar-hide"
           style={{ scrollSnapType: "y mandatory" }}
         >
           {reelsData.map((reel, index) => (
@@ -34,7 +32,7 @@ const Reel: React.FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </DashboardMain>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import videos from '../../Data/HotlistVid/HotlistVid';
+import videos from '../../data/HotlistVid/HotlistVid';
 import { useParams } from 'react-router-dom';
 import '../../index.css'
 
@@ -24,8 +24,8 @@ const VideoRect: React.FC = () => {
   }
 
   return (
-    <div className=' pt-2 '>
-      <video className=' h-[27rem]   rounded-xl' controls>
+    <div className=' py-2 w-full flex flex-col items-start'>
+      <video className=' h-[28rem]   rounded-xl w-full bg-black' controls>
         <source src={vid.list[0].video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

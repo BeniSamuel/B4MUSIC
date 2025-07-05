@@ -1,16 +1,76 @@
-import React from 'react'
-import Regside from '../../Components/Regside/Regside'
-import LoginCP from '../../Components/LoginCP/LoginCP'
+import React from "react";
+import Form from "../../layout/Forms/Form";
+import { useNavigate, Link } from "react-router-dom";
+import Checkbox from "../../components/Common/Checkbox/Checkbox";
 
-const Login:React.FC = () => {
+const Login: React.FC = () => {
+  const navigate = useNavigate();
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    // handling input logic
+
+    // navigating to the dashboard
+
+    navigate("/dashboard");
+  }
+
   return (
-    <div className=' w-[100vw] md:flex flex-row h-[100vh]'>
-        {/* regside component */}
-        <Regside className=" h-full "/>
-        {/* login component */}
-        <LoginCP />
-    </div>
-  )
-}
+    <Form>
+      <div className=" flex flex-col h-[100vh] bg-black md:w-[50vw] items-center justify-center gap-12">
+        <div>
+          <p className=" text-[#FB7800] font-bold text-xl font-poppins ">
+            B4MUSIC
+          </p>
+        </div>
+        <div>
+          <form
+            className=" flex flex-col items-center gap-12"
+            onSubmit={handleSubmit}
+          >
+            <input
+              type="email"
+              placeholder="Email"
+              className=" text-[#FB7800] font-poppins text-sm outline-none bg-transparent placeholder:text-[#7E7575] placeholder:font-poppins placeholder:text-sm w-96 h-12 border-[#FB7800] border-2 px-4 rounded-lg"
+            />
+            <div className=" flex flex-col gap-3">
+              <input
+                type="password"
+                placeholder="Password"
+                className=" text-[#FB7800] font-poppins outline-none bg-transparent placeholder:text-[#7E7575] placeholder:font-poppins placeholder:text-sm  w-96 h-12 border-[#FB7800] border-2 px-4 rounded-lg"
+              />
+              <div className=" flex flex-row gap-12 w-96 justify-between">
+                <div className=" flex flex-row gap-2 items-center">
+                  <Checkbox />
+                  <span className=" text-[#7E7575] font-poppins text-sm ">
+                    Remember me
+                  </span>
+                </div>
+                <span className=" text-[#FB7800] underline font-semibold font-poppins text-sm">
+                  Forgot Password?
+                </span>
+              </div>
+            </div>
 
-export default Login
+            <input
+              type="submit"
+              value="Login"
+              className=" bg-[#FB7800] text-white w-96 h-12 rounded-lg font-poppins text-sm"
+              onClick={() => navigate("/dashboard")}
+            />
+            <div>
+              <p className=" text-[#7E7575] font-medium font-poppins text-sm">
+                New to site.{" "}
+                <Link to="/signup">
+                  <span className=" text-[#FB7800] font-semibold">Sign up</span>
+                </Link>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </Form>
+  );
+};
+
+export default Login;

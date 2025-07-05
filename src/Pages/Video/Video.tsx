@@ -1,28 +1,30 @@
 import React from "react";
-import VIdeoCP from "../../Components/VideoCP/VIdeoCP";
-import VideoRect from "../../Components/VideoCP/VideoRect";
-import MorePeople from "../../Components/VideoCP/MorePeople";
-import Similar from "../../Components/VideoCP/Similar";
+import VIdeoCP from "../../components/Video/VIdeoCP";
+import VideoRect from "../../components/Video/VideoRect";
+import MorePeople from "../../components/Video/MorePeople";
+import Similar from "../../components/Video/Similar";
+import VidDescription from "../../components/Video/VidDescription";
+import VidComments from "../../components/Video/VidComments";
 
 const Video: React.FC = () => {
   return (
-    <div className=" bg-black flex flex-col">
+    <div className=" bg-black flex flex-col h-[100vh]">
       <VIdeoCP />
-      <div className=" flex flex-row gap-28 pt-16">
-        <div className=" h-fit w-[55vw] pl-14">
+      <div className=" flex flex-row gap-32 py-10 px-12 h-[90%]">
+        <div className=" w-[55vw] px-3 py-2 h-full overflow-y-auto">
           <VideoRect />
-          <div className=" flex flex-col gap-10">
+          <div className=" flex flex-col gap-4">
             <div className=" ">
               <img />
               <p className=" text-white font-poppins text-sm">
-                Plenty - <span className=" text-[#EE7D14]">Burna Boy</span>
+                Yawa - <span className=" text-[#EE7D14]">Fire Boy</span>
               </p>
             </div>
-            <MorePeople />
-            <Similar />
+            <VidDescription />
+            <VidComments />
           </div>
         </div>
-        <div className=" flex flex-col gap-8 md:w-[30vw]">
+        <div className=" flex flex-col gap-8 w-[40vw] h-full overflow-y-auto px-2 py-2">
           <MorePeople />
           <Similar />
         </div>

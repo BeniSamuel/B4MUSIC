@@ -1,26 +1,27 @@
 import React, { useState } from "react";
-import DashLeft from "../../Components/DashLeft/DashLeft";
-import Nodownload from "../../Components/Downloads/Nodownload";
-import "../../index.css";
+import Nodownload from "../../components/Downloads/Nodownload";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 const Downloads: React.FC = () => {
   const [downloads, setDownloads] = useState(false);
   return (
-    <div className=" h-[100vh] bg-[#0A0A0A] flex flex-row ">
-      <DashLeft />
+    <DashboardMain>
       <div
-        className={`w-[75vw] md:w-[85vw] lg:w-[68rem] ${
-          downloads === false
-            ? "flex flex-col items-center pt-8"
-            : "flex flex-col"
-        } dashcontent`}
+        className={`
+             flex flex-col items-center py-10 gap-7
+        `}
       >
         {downloads ? "hy" : <Nodownload />}
-        <div onClick={() => { setDownloads(true)}}>
-          download
+        <div
+          onClick={() => {
+            setDownloads(true);
+          }}
+          className=" text-white font-poppins cursor-pointer text-sm"
+        >
+          Download
         </div>
       </div>
-    </div>
+    </DashboardMain>
   );
 };
 

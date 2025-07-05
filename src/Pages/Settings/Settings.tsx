@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 // Define the type for the state
 type StateType = {
@@ -7,21 +7,21 @@ type StateType = {
 
 // Define the type for actions
 type ActionType =
-  | { type: 'increment' }
-  | { type: 'decrement' }
-  | { type: 'reset' };
+  | { type: "increment" }
+  | { type: "decrement" }
+  | { type: "reset" };
 
 // Reducer function with type annotations
 function reducer(state: StateType, action: ActionType): StateType {
   switch (action.type) {
-    case 'increment':
+    case "increment":
       return { count: state.count + 1 };
-    case 'decrement':
+    case "decrement":
       return { count: state.count - 1 };
-    case 'reset':
+    case "reset":
       return { count: 0 };
     default:
-      throw new Error('Unsupported action type');
+      throw new Error("Unsupported action type");
   }
 }
 
@@ -33,9 +33,9 @@ const Settings: React.FC = () => {
   return (
     <div>
       <p>Count: {state.count}</p>
-      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
-      <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
     </div>
   );
 };
