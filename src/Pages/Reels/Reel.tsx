@@ -3,7 +3,7 @@ import reels from "../../assets/Reels/camera_reels.svg";
 import reelsData from "../../Data/Reels/Reels";
 import Reels from "../../Components/Reel/Reels/Reels";
 import "../../index.css";
-import DashboardMain from "../../Layout/Dashboard/DashboardMain";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 const Reel: React.FC = () => {
   return (

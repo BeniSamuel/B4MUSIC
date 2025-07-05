@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../Layout/Forms/Form";
+import Form from "../../layout/Forms/Form";
 import { useNavigate, Link } from "react-router-dom";
 import Checkbox from "../../Components/Common/Checkbox/Checkbox";
 

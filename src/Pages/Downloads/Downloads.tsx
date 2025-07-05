@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nodownload from "../../Components/Downloads/Nodownload";
-import DashboardMain from "../../Layout/Dashboard/DashboardMain";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 const Downloads: React.FC = () => {
   const [downloads, setDownloads] = useState(false);

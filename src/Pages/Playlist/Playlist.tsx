@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 import PlaylistCP from "../../Components/Playlist/PlaylistCP/PlaylistCP";
 import PlaForm from "../../Components/Playlist/PlaForm/PlaForm";
 import Playtop from "../../Components/Playlist/PlayTop/Playtop";
-import DashboardMain from "../../Layout/Dashboard/DashboardMain";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 // Define a type for the playlist context
 type PlaylistContextType = {

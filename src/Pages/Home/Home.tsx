@@ -3,7 +3,7 @@ import TopDash from "../../Components/Dashboard/TopDash/TopDash";
 import Hotlist from "../../Components/Home/Hotlist/Hotlist";
 import Trending from "../../Components/Home/Trending/Trending";
 import DashReels from "../../Components/Home/DashReel/DashReels";
-import DashboardMain from "../../Layout/Dashboard/DashboardMain";
+import DashboardMain from "../../layout/Dashboard/DashboardMain";
 
 const Home: React.FC = () => {
   const [dash, setDash] = useState(true);
