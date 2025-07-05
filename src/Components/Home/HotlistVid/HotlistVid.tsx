@@ -4,10 +4,11 @@ import { useNavigate } from "react-router-dom";
 import More from "../../Common/More/More";
 
 interface videProps {
+  key: number;
   id: number;
   cover: string;
   title: string;
-  list?: {id: number, video: string, title: string }[];
+  list?: { id: number; video: string; title: string }[];
 }
 
 const HotlistVid: React.FC<videProps> = (props) => {
@@ -19,7 +20,9 @@ const HotlistVid: React.FC<videProps> = (props) => {
           className=" w-[19rem] h-[13rem] "
           controls
           onClick={() => {
-            navigate(`/video/${props.list[0].id}`);
+            if (props.list && props.list.length > 0) {
+              navigate(`/video/${props.list[0].id}`);
+            }
           }}
         >
           <source src={props.cover} />
