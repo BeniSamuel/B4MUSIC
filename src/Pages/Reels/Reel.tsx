@@ -1,5 +1,5 @@
 import React from "react";
-import reels from "../../assets/Reels/camera_reels.svg";
+import reels from "../../Assets/Reels/camera_reels.svg";
 import reelsData from "../../Data/Reels/Reels";
 import Reels from "../../Components/Reel/Reels/Reels";
 import "../../index.css";

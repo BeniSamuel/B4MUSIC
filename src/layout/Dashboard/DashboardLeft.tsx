@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../index.css";
 
 const DashboardLeft: React.FC = () => {
   const location = useLocation();
@@ -10,7 +9,7 @@ const DashboardLeft: React.FC = () => {
   const isActive = (path: string) => tab === path;
 
   return (
-    <div className="bg-black w-[15%] flex flex-col justify-between py-4 pl-7 dashleft">
+    <div className=" hidden bg-black w-[15%] md:flex flex-col justify-between py-4 pl-7 ">
       <div className="flex flex-col gap-9">
         <span className="font-bold text-[#FB7800] font-poppins">B4MUSIC</span>
 

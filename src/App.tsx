@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Protected from "./Components/Protected/Protected";
 import LoadingCP from "./Components/LoadingCP/LoadingCP";
+import NotFound from "./Pages/NotFound/NotFound";
 
 // Lazy-loaded components
 const Login = lazy(() => import("./Pages/Login/Login"));
@@ -29,6 +30,7 @@ function App() {
             <Route path="/dashboard/profile" element={<Profile />} />
             <Route path="/dashboard/settings" element={<Settings />} />
             <Route path="/video/:id" element={<Video />} />
+            <Route path="*" element={<NotFound />}/>
           </Route>
         </Routes>
       </Suspense>

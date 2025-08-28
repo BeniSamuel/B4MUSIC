@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import tick from "../../../assets/Registration/tick.png";
+import tick from "../../../Assets/Registration/tick.png";
 
 const Checkbox: React.FC = () => {
   const [click, setClick] = useState(false);

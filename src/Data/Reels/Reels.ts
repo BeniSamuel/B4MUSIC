@@ -1,7 +1,7 @@
-import image1 from "../../assets/Image/reel-one.png";
-import image2 from "../../assets/Image/reels-two.png";
-import image3 from "../../assets/Image/reels-three.png";
-import image4 from "../../assets/Image/reel-four.png";
+import image1 from "../../Assets/Image/reel-one.png";
+import image2 from "../../Assets/Image/reels-two.png";
+import image3 from "../../Assets/Image/reels-three.png";
+import image4 from "../../Assets/Image/reel-four.png";
 
 const reels = [
   {

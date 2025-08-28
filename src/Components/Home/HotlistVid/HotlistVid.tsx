@@ -1,5 +1,5 @@
 import React from "react";
-import list from "../../../assets/Home/Hotlist/list-white.svg";
+import list from "../../../Assets/Home/Hotlist/list-white.svg";
 import { useNavigate } from "react-router-dom";
 import More from "../../Common/More/More";
 
@@ -35,7 +35,7 @@ const HotlistVid: React.FC<videProps> = (props) => {
           </div>
         </div>
       </div>
-      <div className="  flex flex-row justify-between items-center">
+      <div className="  flex flex-row justify-between items-center relative">
         <p className=" text-white font-poppins text-sm">{props.title}</p>
         <More />
       </div>

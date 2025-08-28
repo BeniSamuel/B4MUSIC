@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     <DashboardMain>
       <div className="flex-1 h-full flex flex-col">
         <TopDash setDash={setDash} dash={dash} />
-        <div className={`flex flex-col gap-1 py-4 px-4 overflow-y-auto `}>
+        <div className={`flex flex-col gap-1 py-4 px-4 overflow-y-auto`}>
           <Hotlist />
           <Trending />
           <DashReels />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import searchIcon from "../../../assets/Dashboard/search.png";
-import menu from "../../../assets/Dashboard/menu.png";
+import searchIcon from "../../../Assets/Dashboard/search.png";
+import menu from "../../../Assets/Dashboard/menu.png";
 
 interface topProp {
   setDash: (value: boolean) => void | undefined;
@@ -9,7 +9,7 @@ interface topProp {
 }
 
 const TopDash: React.FC<topProp> = ({ setDash, dash }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [search, setSearch] = useState("");
   const [history, setHistory] = useState(false);
   const [searchWid, setSearchWid] = useState(false);
