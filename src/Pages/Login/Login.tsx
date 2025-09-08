@@ -11,7 +11,6 @@ const Login: React.FC = () => {
     // handling input logic
 
     // navigating to the dashboard
-
     navigate("/dashboard");
   }
 
