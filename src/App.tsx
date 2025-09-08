@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Protected from "./Components/Protected/Protected";
 import LoadingCP from "./Components/LoadingCP/LoadingCP";
 import NotFound from "./Pages/NotFound/NotFound";
+import { Toaster } from "react-hot-toast";
+import Create from "./Pages/Create/Create";
 
 // Lazy-loaded components
 const Login = lazy(() => import("./Pages/Login/Login"));
@@ -29,11 +31,19 @@ function App() {
             <Route path="/dashboard/downloads" element={<Downloads />} />
             <Route path="/dashboard/profile" element={<Profile />} />
             <Route path="/dashboard/settings" element={<Settings />} />
+            <Route path="/dashboard/create" element={<Create />} />
             <Route path="/video/:id" element={<Video />} />
             <Route path="*" element={<NotFound />}/>
           </Route>
         </Routes>
       </Suspense>
+      <Toaster
+      toastOptions={{
+        style: {
+          fontFamily: "poppins-medium"
+        }
+      }} 
+      />
     </Router>
   );
 }
