@@ -1,5 +1,5 @@
 {
-  "name": "withts",
+  "name": "b4music",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,7 @@
     "axios": "^1.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.6.0",
     "react-player": "^2.16.0",
     "react-router-dom": "^6.24.0",
     "zustand": "^5.0.8"
