@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import searchIcon from "../../../Assets/Dashboard/search.png";
 import menu from "../../../Assets/Dashboard/menu.png";
 
@@ -14,6 +14,7 @@ const TopDash: React.FC<topProp> = ({ setDash, dash }) => {
   const [history, setHistory] = useState(false);
   const [searchWid, setSearchWid] = useState(false);
   const [recentSearches, setRecentSearches] = useState([""]);
+  const navigate = useNavigate();
 
   function handleClick() {
     setHistory(history ? false : true);
@@ -108,8 +109,8 @@ const TopDash: React.FC<topProp> = ({ setDash, dash }) => {
 
         {isLoggedIn ? (
           <div className=" flex flex-row">
-            <div className=" bg-green-700 py-1 px-3 rounded-full">
-              <span className=" text-white text-xl font-bold">B</span>
+            <div className=" bg-green-700 py-1 px-4 rounded-lg cursor-pointer" onClick={() => navigate("/dashboard/create")}>
+              <span className=" text-white text-sm font-medium font-poppins">Create +</span>
             </div>
             <div>
               <img src="" alt="" />
