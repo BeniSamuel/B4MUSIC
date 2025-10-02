@@ -1,4 +1,4 @@
-import yawa from "../../Assets/Videos/y2mate.com - Fireboy DML  YAWA Official Video_1440p.mp4";
+import yawa from "../../assets/Videos/y2mate.com - Fireboy DML  YAWA Official Video_1440p.mp4";
 
 const trending = [
   {
