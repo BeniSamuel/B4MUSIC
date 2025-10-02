@@ -1,5 +1,5 @@
 import React from "react";
-import hotlistIc from "../../../Assets/Home/Hotlist/list-white.svg";
+import hotlistIc from "../../../assets/Home/Hotlist/list-white.svg";
 import HotlistVid from "../HotlistVid/HotlistVid";
 import videos from "../../../Data/HotlistVid/HotlistVid";
 
