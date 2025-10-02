@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const Protected: React.FC = () => {
   // const token = localStorage.getItem("authToken");
