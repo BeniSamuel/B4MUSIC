@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import searchIcon from "../../../Assets/Dashboard/search.png";
-import menu from "../../../Assets/Dashboard/menu.png";
+import searchIcon from "../../../assets/Dashboard/search.png";
+import menu from "../../../assets/Dashboard/menu.png";
 
 interface topProp {
   setDash: (value: boolean) => void | undefined;
