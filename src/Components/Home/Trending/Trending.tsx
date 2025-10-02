@@ -1,6 +1,6 @@
 import React from "react";
 import Video from "../../../Data/TrendingVideo/TrendingVideo";
-import logo from "../../../Assets/Home/Trending/arrow-logo.svg";
+import logo from "../../../assets/Home/Trending/arrow-logo.svg";
 import HotlistVid from "../HotlistVid/HotlistVid";
 
 const Trending: React.FC = () => {
