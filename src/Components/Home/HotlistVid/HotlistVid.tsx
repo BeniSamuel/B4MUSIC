@@ -1,5 +1,5 @@
 import React from "react";
-import list from "../../../Assets/Home/Hotlist/list-white.svg";
+import list from "../../../assets/Home/Hotlist/list-white.svg";
 import { useNavigate } from "react-router-dom";
 import More from "../../Common/More/More";
 
