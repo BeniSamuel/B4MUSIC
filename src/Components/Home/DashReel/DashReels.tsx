@@ -1,6 +1,6 @@
 import React from "react";
 import reels from "../../../Data/Reels/Reels";
-import reel from "../../../Assets/Home/DashReel/camera_reels.svg";
+import reel from "../../../assets/Home/DashReel/camera_reels.svg";
 import DashReel from "./DashReel";
 
 const DashReels: React.FC = () => {
