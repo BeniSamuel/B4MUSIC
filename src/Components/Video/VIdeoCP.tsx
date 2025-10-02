@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import search from "../../Assets/Video/search.png";
+import search from "../../assets/Video/search.png";
 
 const VIdeoCP: React.FC = () => {
   const navigate = useNavigate();
