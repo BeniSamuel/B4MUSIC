@@ -1,5 +1,5 @@
 import React from "react";
-import peopleDance from "../../Assets/Image/People dancing at disco party.png";
+import peopleDance from "../../assets/Image/People dancing at disco party.png";
 
 type FormLeftProps = {
   className: string;
