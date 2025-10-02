@@ -1,5 +1,5 @@
 import React from "react";
-import reels from "../../Assets/Reels/camera_reels.svg";
+import reel_icon from "../../Assets/Reels/camera_reels.svg";
 import reelsData from "../../Data/Reels/Reels";
 import Reels from "../../Components/Reel/Reels/Reels";
 import "../../index.css";
@@ -13,7 +13,7 @@ const Reel: React.FC = () => {
         <div className="flex flex-col items-center justify-center py-4">
           <div className="flex flex-row gap-3 items-center justify-center">
             <p className="text-white font-poppins text-sm">Reels</p>
-            <img src={reels} className="h-6 w-6" alt="Reels Icon" />
+            <img src={reel_icon} className="h-6 w-6" alt="Reels Icon" />
           </div>
         </div>
 
