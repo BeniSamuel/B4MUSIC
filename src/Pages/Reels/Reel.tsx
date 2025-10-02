@@ -1,5 +1,5 @@
 import React from "react";
-import reel_icon from "../../Assets/Reels/reel_icon.svg";
+import reel_icon from "../../assets/Reels/reel_icon.svg";
 import reelsData from "../../Data/Reels/Reels";
 import Reels from "../../Components/Reel/Reels/Reels";
 import "../../index.css";
