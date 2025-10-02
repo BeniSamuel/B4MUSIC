@@ -1,6 +1,6 @@
 import React from "react";
-import searchIcon from "../../../Assets/Playlist/search.png";
-import sort from "../../../Assets/Playlist/hoLIst.svg";
+import searchIcon from "../../../assets/Playlist/search.png";
+import sort from "../../../assets/Playlist/hoLIst.svg";
 
 
 const Playtop: React.FC = () => {
