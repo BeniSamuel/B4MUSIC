@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import more from "../../../Assets/Common/more.svg";
+import more from "../../../assets/Common/more.svg";
 
 const More: React.FC = () => {
   const [show, setShow] = useState(false);
