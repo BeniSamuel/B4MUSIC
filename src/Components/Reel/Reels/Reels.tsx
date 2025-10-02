@@ -1,8 +1,8 @@
 import React from "react";
-import like from "../../../Assets/Reels/like.svg";
-import dislike from "../../../Assets/Reels/dislike.svg";
-import comment from "../../../Assets/Reels/comment.svg";
-import share from "../../../Assets/Reels/share.svg";
+import like from "../../../assets/Reels/like.svg";
+import dislike from "../../../assets/Reels/dislike.svg";
+import comment from "../../../assets/Reels/comment.svg";
+import share from "../../../assets/Reels/share.svg";
 import More from "../../Common/More/More";
 
 
